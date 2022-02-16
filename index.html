@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+     <a-assets>
+        <img id="signature" src="assets/Siggy.png">
+        <a-asset-item id="flower" src="storageapi.fleek.co/acebe451-e4f7-4ebd-b5f7-9c9660172371-bucket/3D-models/flower.glb">
+      </a-assets>
+      <a-sphere position="-2 0.5 -3" rotation="0 45 0" radius="0.5" color="#4CC3D9"></a-sphere>
+     <a-box position="0 0.5 -3" scale="1 1 1" color="red"></a-box>
+     <a-torus position="2 0.5 -3" scale="0.5 0.5 0.5" rotation="-45 0 0" radius="0.5" radius-tubular="0.1" color="yellow"></a-torus>
+     <a-gltf-model src="#flower"
+     position="0 0.5 -1.3">
+     
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      
+      <a-image position="0 2.75 -3" rotation="0 0 0" material=" src:#signature"></a-image>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
